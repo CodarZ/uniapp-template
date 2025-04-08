@@ -1,0 +1,23 @@
+docs
+libs
+dist
+static
+public
+node_modules
+.versionrc
+*.discard
+
+# 项目生成的文件
+auto-imports.d.ts
+components.d.ts
+uni-pages.d.ts
+project.private.config.json
+.eslintrc-auto-import.json
+
+# 项目插件生成的文件
+src/pages.json
+src/manifest.json
+{wx,my,swan,jd,ks,tt}components/**/*
+
+# openapi-ts-request 生成的文件
+src/apis/auto/**/*

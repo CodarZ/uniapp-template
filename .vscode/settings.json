@@ -1,0 +1,207 @@
+{
+  // explorer
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // workbench
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.startupEditor": "welcomePage",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.autoLockGroups": {
+    "mainThreadWebview-simpleBrowser.view": false
+  },
+
+  // terminal
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.lineHeight": 1.1,
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono', Consolas, 'Courier New', monospace",
+
+  // editor
+  "editor.tabSize": 2,
+  "editor.fontSize": 18,
+  "editor.wordWrap": "on",
+  "editor.hover.sticky": true,
+  "editor.linkedEditing": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "editor.autoClosingBrackets": "always",
+  "editor.guides.bracketPairs": "active",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontFamily": "'FiraCode Nerd Font', Consolas, 'Courier New', monospace",
+  "editor.unicodeHighlight.allowedCharacters": {
+    "：": true,
+    "（": true,
+    "）": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[.editorconfig]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[properties]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  // files
+  "files.simpleDialog.enable": true,
+  "files.associations": {
+    "*.json": "jsonc",
+    "*.json5": "json5",
+    "*.wxml": "html",
+    "*.wxs": "javascript",
+    "*.wxss": "css",
+    "*.axml": "html",
+    "*.acss": "css"
+  },
+  "files.exclude": {
+    // 生成目录
+    "dist": true,
+    "public": true,
+    "miniprogram_npm": true,
+    "node_modules": true,
+
+    // 版本控制和临时文件
+    ".git": true,
+    ".gitignore": true,
+    ".DS_Store": true,
+    "Thumbs.db": true,
+
+    // 特定目录
+    "libs": true,
+
+    // 特定文件
+    ".npmrc": true,
+    "shims-uni.d.ts": true,
+    "**/*.lock": true,
+    "**/*.yaml": true,
+    ".editorconfig": true,
+    // "{wx,my,swan,jd,ks,tt}components/**/*": true,
+    "**/*{eslint,stylelint,prettier}*": true
+  },
+
+  "search.exclude": {
+    // 生成目录
+    "dist": true,
+    "public": true,
+    "miniprogram_npm": true,
+    "node_modules": true,
+
+    // 版本控制和临时文件
+    ".git": true,
+    ".gitignore": true,
+    ".DS_Store": true,
+    "Thumbs.db": true,
+
+    // 特定目录
+    "libs": true,
+
+    // 特定文件
+    ".npmrc": true,
+    "shims-uni.d.ts": true,
+    "**/*.lock": true,
+    "**/*.yaml": true,
+    ".editorconfig": true,
+    "{wx,my,swan,jd,ks,tt}components/**/*": true,
+    "**/*{eslint,stylelint,prettier}*": true
+  },
+
+  // git
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+
+  // emmet
+  "emmet.includeLanguages": {
+    "wxml": "html",
+    "wxs": "javascript",
+    "wxss": "css",
+    "axml": "html",
+    "acss": "css"
+  },
+
+  // stylelint
+  "stylelint.enable": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": [
+    "css",
+    "wxss",
+    "acss",
+    "less",
+    "sass",
+    "scss",
+    "vue",
+    "html",
+    "wxml",
+    "axml"
+  ], // 需要与 package.json 的 scripts 中的命令对应
+
+  // prettier
+  "prettier.enable": true,
+  "prettier.printWidth": 100,
+  "prettier.singleQuote": true,
+  "prettier.endOfLine": "auto",
+
+  // eslint
+  "eslint.useFlatConfig": true,
+  "eslint.format.enable": false,
+  "eslint.rules.customizations": [
+    { "rule": "style/*", "severity": "off", "fixable": true },
+    { "rule": "format/*", "severity": "off", "fixable": true },
+    { "rule": "*-indent", "severity": "off", "fixable": true },
+    { "rule": "*-spacing", "severity": "off", "fixable": true },
+    { "rule": "*-spaces", "severity": "off", "fixable": true },
+    { "rule": "*-order", "severity": "off", "fixable": true },
+    { "rule": "*-dangle", "severity": "off", "fixable": true },
+    { "rule": "*-newline", "severity": "off", "fixable": true },
+    { "rule": "*quotes", "severity": "off", "fixable": true },
+    { "rule": "*semi", "severity": "off", "fixable": true }
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "json5",
+    "jsonc",
+    "yaml",
+    "toml",
+    "xml",
+    "gql",
+    "graphql",
+    "astro",
+    "svelte",
+    "css",
+    "less",
+    "scss",
+    "pcss",
+    "postcss"
+  ],
+
+  // common intellisense
+  "common-intellisense.ui": ["wotDesignUi1"]
+}

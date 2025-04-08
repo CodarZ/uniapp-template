@@ -1,0 +1,94 @@
+{
+  "name": "uniapp-template",
+  "version": "0.0.0",
+  "author": {
+    "name": "CodarZ",
+    "email": "1476712061@qq.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
+  },
+  "scripts": {
+    "dev:h5": "uni",
+    "dev:mp-weixin": "uni -p mp-weixin",
+    "dev:mp-alipay": "uni -p mp-alipay",
+    "build:h5": "uni build",
+    "build:mp-weixin": "uni build -p mp-weixin",
+    "build:mp-alipay": "uni build -p mp-alipay",
+    "type-check": "vue-tsc --noEmit",
+    "gen-api": "openapi-ts"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "3.0.0-4050720250324001",
+    "@dcloudio/uni-app-plus": "3.0.0-4050720250324001",
+    "@dcloudio/uni-components": "3.0.0-4050720250324001",
+    "@dcloudio/uni-h5": "3.0.0-4050720250324001",
+    "@dcloudio/uni-mp-alipay": "3.0.0-4050720250324001",
+    "@dcloudio/uni-mp-weixin": "3.0.0-4050720250324001",
+    "dayjs": "^1.11.13",
+    "pinia": "2.0.36",
+    "pinia-plugin-persistedstate": "3.2.1",
+    "qs": "^6.14.0",
+    "vue": "^3.5.13",
+    "wot-design-uni": "^1.8.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.11.0",
+    "@dcloudio/types": "^3.4.14",
+    "@dcloudio/uni-automator": "3.0.0-4050720250324001",
+    "@dcloudio/uni-cli-shared": "3.0.0-4050720250324001",
+    "@dcloudio/uni-stacktracey": "3.0.0-4050720250324001",
+    "@dcloudio/vite-plugin-uni": "3.0.0-4050720250324001",
+    "@types/node": "^22.13.14",
+    "@types/qs": "^6.9.18",
+    "@types/wechat-miniprogram": "^3.4.8",
+    "@uni-helper/vite-plugin-uni-components": "^0.2.0",
+    "@uni-helper/vite-plugin-uni-manifest": "^0.2.8",
+    "@vue/runtime-core": "^3.5.13",
+    "@vue/tsconfig": "^0.7.0",
+    "eslint": "^9.23.0",
+    "openapi-ts-request": "^1.3.0",
+    "postcss-html": "^1.8.0",
+    "prettier": "3.5.3",
+    "prettier-eslint": "^16.3.0",
+    "sass": "1.77.8",
+    "stylelint": "^16.18.0",
+    "stylelint-config-recess-order": "^6.0.0",
+    "stylelint-config-recommended-vue": "^1.6.0",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "terser": "^5.39.0",
+    "typescript": "^5.7.2",
+    "unplugin-auto-import": "^19.1.2",
+    "vite": "5.4.17",
+    "vite-plugin-restart": "^0.4.2",
+    "vue-tsc": "^2.2.8"
+  },
+  "pnpm": {
+    "overrides": {
+      "@intlify/core-base": "^9.1.11",
+      "@intlify/message-resolver": "^9.1.11",
+      "jpeg-js": "^0.4.4",
+      "phin": "^3.7.1"
+    },
+    "allowedDeprecatedVersions": {
+      "abab": "2.0.6",
+      "domexception": "2.0.1",
+      "glob": "7.2.3",
+      "inflight": "1.0.6",
+      "phin": "2.9.3",
+      "rimraf": "3.0.2",
+      "w3c-hr-time": "1.0.2"
+    },
+    "onlyBuiltDependencies": [
+      "core-js",
+      "es5-ext",
+      "esbuild",
+      "vue-demi"
+    ]
+  },
+  "resolutions": {
+    "bin-wrapper": "npm:bin-wrapper-china"
+  }
+}

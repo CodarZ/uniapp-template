@@ -1,0 +1,55 @@
+{
+  "globalStyle": {
+    "navigationStyle": "default",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "uniapp-template"
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^wd-(.*)": "wot-design-uni/components/wd-$1/wd-$1.vue"
+    }
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#018d71",
+    "backgroundColor": "#F8F8F8",
+    "borderStyle": "black",
+    "height": "50px",
+    "fontSize": "10px",
+    "iconWidth": "24px",
+    "spacing": "3px",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/about/index",
+        "text": "关于"
+      }
+    ]
+  },
+  "pages": [
+    // pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index"
+    },
+    {
+      "path": "pages/user/index",
+      "needLogin": true
+    },
+    {
+      "path": "pages/about/index"
+    },
+    {
+      "path": "pages/login/default/index",
+      "style": {
+        "navigationBarTitleText": "默认登录页"
+      }
+    }
+  ],
+  "subPackages": []
+}

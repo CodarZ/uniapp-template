@@ -1,0 +1,41 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+.DS_Store
+dist
+*.local
+# .eslintrc-auto-import.json
+
+# Editor directories and files
+.idea
+*.discard
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.hbuilderx
+.*cache
+
+# lock 文件还是不要了，主要的版本写死
+pnpm-lock.yaml
+package-lock.json
+
+.husky/*
+!.husky/commit-msg
+!.husky/pre-commit
+.vite-cache
+
+# 项目生成的文件
+auto-imports.d.ts
+components.d.ts
+uni-pages.d.ts
+project.private.config.json
+.eslintrc-auto-import.json

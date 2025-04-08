@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "pkief.material-icon-theme",
+
+    "simonhe.common-intellisense",
+
+    "vue.volar",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "foxundermoon.shell-format",
+    "stylelint.vscode-stylelint",
+    "maggie.eslint-rules-zh-plugin",
+
+    "uni-helper.uni-highlight-vscode",
+    "uni-helper.uni-app-schemas-vscode"
+  ]
+}
